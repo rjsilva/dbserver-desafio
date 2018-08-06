@@ -13,7 +13,7 @@ import cucumber.api.junit.Cucumber;
  */
 @RunWith(Cucumber.class)
 @CucumberOptions(monochrome = true, snippets = SnippetType.CAMELCASE, 
-				plugin = {"pretty","html:target/cucumber.html"},
+				plugin = {"pretty","html:target/cucumber.html", "json:target/cucumber.json"},
 				features = { ".//src//test//resources//" }, 
 				glue = {"br.com.dbserver.steps","br.com.dbserver.config"},
 				tags = { " @CTRCON001" })
